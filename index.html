@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Ravengers Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Tokyo Revengers Survey Form</h1>
+    <p id="description">Please fill the form, Thanks you.</p>
+<div id="form-to-label">
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" name="name" placeholder="Input Username" required/>
+        </label>
+        <label for="email" id="email-label">
+            Email
+            <input type="email" id="email" name="email" placeholder="Input your email" required/>
+        </label>
+        <label for="number" id="number-label">
+            Age
+            <input type="number" id="number" name="number" placeholder="Input Age" min="15" max="40" required/>
+        </label>
+        <label for="dropdown">
+        Select Your Job Character
+        <select id="dropdown" name="role" required>
+            <option disabled selected value>Select job role</option>
+            <option value="name">Ketua</option>
+            <option value="name">Wakil Ketua</option>
+            <option value="name">Anggota</option>
+            <option value="name">Ketua divisi</option>
+            <option value="name">wakil divisi</option>
+        </select>
+        </label>
+        <label for="radio" id="radio-label">
+            Apa kamu suka Tokyo Revengers
+            <label for="radio" class="radio">
+            <input type="radio" id="radio" name="user-recomended" value="yes" checked/>Ya
+            </label>
+            <label for="radio" class="radio1">
+            <input type="radio" id="radio" name="user-recomended" value="no" checked/>Tidak
+            </label>
+        </label>
+        <label for="checkbox">
+        Pilihlah anggota Tokyo Manji yang bukan anggota Valhala !
+        <label for="checkbox" class="c0">
+            <input type="checkbox" name="name" value="Mikey" id="checkbox">Mikey
+        </label>
+        <label for="checkbox" class="c1">
+            <input type="checkbox" name="name" value="takemichi" id="checkbox">Takemichi
+        </label>
+        <label for="checkbox" class="c2">
+            <input type="checkbox" name="name" value="Kazudora" id="checkbox">Kazudora
+        </label>
+        <label for="checkbox" class="c3">
+            <input type="checkbox" name="name" value="Baji" id="checkbox">Baji
+        </label>
+        <label for="checkbox" class="c4">
+            <input type="checkbox" name="name" value="Chifuyu" id="checkbox">Chifuyu
+        </label>
+
+        <label for="comments" id="comments-label">
+            Any comments or suggestions?
+            <textarea id="comments" cols="30" rows="10"></textarea>
+        </label>
+
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+</div>   
+</body>
+</html>
